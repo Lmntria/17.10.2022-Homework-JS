@@ -1,19 +1,19 @@
 // let arr=[2,3,4,5,6,8,7,99,];
 // console.log(arr);
 // let new_arr=[];
-// let created=[]
+// let created=[];
 // let choice;
+// var number;
 // do {
-//   created=[];
 //   let userconfirm=confirm("Array yaradmaq isdeyirsiniz mi?")
 //   if (userconfirm) {
-//     let number=prompt("Nece eded yazmaq isdeyirsiniz?")
+//      number=prompt("Nece eded yazmaq isdeyirsiniz?")
 //     if (isNaN(number)) {
 //       alert("Daxil edilmis data sadece reqem olabiler!!!")
 //     }
 //     else{
 //       for (let i = 0; i < number; i++) {
-//         let input=prompt("ededi daxil edin")
+//         let input=prompt(" ededi daxil edin")
 //         if (isNaN(input)) {
 //            alert("Daxil edilmis data sadece reqem olar!!!")
 //         }
@@ -21,12 +21,13 @@
 //           created.push(input)
 //         }
 //       }
-//       let data=prompt("neceye vurmaq istediyinizi daxil edin")
-//       if (isNaN(data)) {
+//       created=[];
+//       let h=prompt("neceye vurmaq istediyinizi daxil edin")
+//       if (isNaN(h)) {
 //         alert("Daxil edilmis data sadece reqem olabiler!!!")
 //       }
 //       else{
-//         multiplyx(data)
+//         multiplyx(h)
 //         console.log(created);
 //       }
 //         choice=confirm("Davam etmek isdeyirsiniz mi?")
@@ -54,7 +55,7 @@
 //   }
 // }
 // function multiplyx(data) {
-//   for (let i = 0; i < created.length; i++) {
+//   for (let i = 0; i < number; i++) {
 //     let x;
 //     x=created[i]*data;
 //     created.push(x);
@@ -62,13 +63,39 @@
 // }
 
 
-const photos=document.getElementsByTagName(img)
-var count=2;
-photos.addEventListener("click",function(){
-  const div = document.querySelector(".row");
-  index++;
-  div.innerHTML += `<div class="col-md-3 width cursor-pointer"><img width="300" src="/assets/photo/wallpaperflare.com_wallpaper (${count}).jpg"></div>`
-  let img = document.querySelector("img");
-  let imgSrc = img.src;
-  document.querySelector('img [name=bat]').src = imgSrc;
-})
+// const photos=document.getElementsByTagName(img)
+// var count=2;
+// photos.addEventListener("click",function(){
+//   const div = document.querySelector(".row");
+//   count++;
+//   div.innerHTML += `<div class="col-md-3 width cursor-pointer"><img width="300" src="/assets/photo/wallpaperflare.com_wallpaper (${count}).jpg"></div>`
+//   let img = document.querySelectorAll("img");
+//   let imgSrc = img.src;
+//   document.querySelector('img[name=bat]') = imgSrc;
+// })
+
+
+// let index=0
+
+// const photo=document.getElementById("main")
+
+// let photos=new Array('')
+
+
+
+// var photos=[
+//   /Users/seymur/Desktop/17-10-2022-Homework/assets/photo/wallpaperflare.com_wallpaper (2).jpg,
+//   /Users/seymur/Desktop/17-10-2022-Homework/assets/photo/wallpaperflare.com_wallpaper (3).jpg,
+//   /Users/seymur/Desktop/17-10-2022-Homework/assets/photo/wallpaperflare.com_wallpaper (4).jpg,
+//   /Users/seymur/Desktop/17-10-2022-Homework/assets/photo/wallpaperflare.com_wallpaper (4).jpg
+// ]
+
+//   let img = document.getElementsByTagName("img");
+//   var count=0;
+//   img.addEventListener("click",function(){
+//     count++
+//     div.innerHTML += `<div class="col-md-3 width cursor-pointer"><img width="300" src="photos[${count}]"></div>`
+//     let img = document.querySelectorAll("img");
+//     let imgSrc = img.src;
+//     document.querySelectorAll("img").src = imgSrc;
+// })
